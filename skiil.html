@@ -1,0 +1,403 @@
+<html>
+  <head>
+    <title>Dribble Replication</title>
+    <style>
+      #main #ist a{
+         list-style-type: none;
+         cursor: pointer;
+         text-decoration: none;
+         color: black;
+       }
+       #main #ist li{
+         list-style-type: none;
+        
+       }
+       header #ist{ 
+        display: flex;
+         flex-direction: row;
+         justify-content: space-evenly;
+         text-decoration: none;
+         align-items: center;
+         margin-top: 25px;
+         font-weight: 600;
+        
+       }
+       #sk{
+          height: auto;
+          width: auto;
+          background-color: #f4f5fb;
+          border-radius: 25px;
+          padding: 15px;
+          list-style-type: none;
+          border-color: #f4f5fb;
+       }
+       #pl button{
+        border: none;
+          border-radius: 50px;
+          padding: 15px 25px;
+          background-color: black;
+          color: white;
+       }
+       #plc button{
+          border: none;
+         
+       }  
+       #ki{
+        position: relative;
+        left: 10px;
+       }  
+       #jkl{
+        white-space:nowrap;
+       }
+       #as{
+               margin-right: 150px;
+       }
+       #mk{
+          display: none;
+
+       }
+      #plc:hover #mk{
+           background-color:rgb(249, 248, 248);
+           display: block;
+           align-items: center;
+           display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 120px;
+          width: 250px;
+          border-radius: 21px;
+          align-items: center;
+          position: fixed;
+          top: 90px;
+          font-weight: 500;
+          font-size: 20px;
+       }
+       #asd{
+          font-size: 10px;
+          font-weight:30;
+       }
+       #mk{
+        margin:10px;
+       }
+       #asz{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         position:sticky;
+         top: 20px;
+         z-index: 100000;
+       }
+       #ghj{
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-start;
+         position: absolute;
+         left:50px;
+       }
+       .jk{
+         border: 1px solid black;
+         border-radius: 50%;
+         padding: 10px;
+         margin-left: 10px;
+         align-items: center;
+       
+       }
+       #dfg {
+         display: flex;
+         flex-direction: row;
+         justify-content:center;
+         position: relative;
+         right: 140px;
+        
+
+       }
+       #tym{
+         border: 1px solid black;
+         border-radius:20px ;
+         padding: 5px 20px 5px 20px;
+         margin-left:10px;
+         color: white;
+         background-color: black;
+       }
+       #fgh{
+         position:relative;
+         left:120px;
+         width: 1110px;
+         top: 90px;
+       }
+      #fgh a{
+         cursor: pointer;
+      }
+      #mku{
+         display: none;
+      }
+      #uknnn:hover #mku{
+        display:block;
+        height: 250px;
+        width: 350px;
+        border: 0.5px solid wheat;
+        border-radius: 5px;
+        position:relative;
+        top: 200px;
+
+      }
+      #ujk{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-evenly;
+      }
+#fff{
+   border: 1px solid black;
+   border-radius: 25px;
+   padding: 5px 10px;
+
+}
+#mkuuu{
+   z-index: 1;
+}
+#content{
+   width: 850px;
+   position: relative;
+   left: 100px;
+   font-size: 24px;
+   font-weight: 300;
+   margin-top: 100px;
+}
+.user-details-section{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+}
+.user-details-section .uhg{
+   width: auto;
+   border: 1px solid hsl(240, 56%, 48%);
+   vertical-align: baseline;
+}
+.user-details-section .uka .photo {
+    width: 72px;
+    height: 72px;
+    margin: 0px  24px;
+    border-radius: 50%
+   }
+
+   #images li{
+      display: inline-block;
+      margin-right: 35px;
+     
+   }
+   #extra-info{
+      margin-top: 100px;
+      width:fit-content;
+      position: relative;
+      left: 100px;
+      list-style-type: none;
+
+   }
+   #ukas{
+      margin-top: 400px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      position: relative;
+      left: 50px;
+   }
+   #like{
+       display: flex;
+       flex-direction: row;
+       list-style-type: none;
+          
+   }
+   #ukas #like li a{
+     margin-right: 35px;
+     cursor: pointer;
+     font-weight:400;
+   }
+   #hjg li{
+      cursor: pointer;
+      display: inline-block;
+      list-style-type: none;
+      margin-right: 10px;
+      position: relative;
+      right: 50px;
+      font-weight: 400;
+   }
+   #qwe{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      list-style-type: none;
+   }
+   #qwe li{
+      display: inline-block;
+      margin: 10px;
+      position: relative;
+      left: 1px;
+      margin-top: 60px;
+      font-weight: lighter;
+      color: grey;
+   }
+   #qwe div:nth-child(1){
+      position: relative;
+      left: 45px;
+   }  
+   * a{
+      cursor: pointer;
+   }  
+   .titl{
+      display: grid;
+      grid-template-columns:repeat(3,1fr);
+      align-items: center;
+      column-gap: 2px;
+   }
+   .titl::before ,.titl::after{
+      content:"";
+      height:2px;
+      background-color: rgb(228, 230, 229);
+      display: block;
+
+   }   
+    </style>
+  </head> 
+  <body>
+    <section id="main">
+       <header id="jkl">
+          <div id="ist">
+              <li style="font-size: 25px;font-family: 'Courier New', Courier, monospace;
+                position: relative;left:5px;"><a href=""><img src="Screenshot (69).png" height="" width=""></a></li>
+               <li><a href="">Find talent</a></li>
+               <li><a href="">Inspiration</a></li>
+            
+            <div id="plc">
+                <a href="">Learn design<i class="fa-solid fa-caret-down" id="ki"></i></a>
+                <div id="mk">
+                    <div>
+                    <li id="hj">
+                        <a href="">UX Diploma</a></li>
+                    <span id="asd">in partnership with UX Design Institute</span></li>
+                </div>
+            <div>
+                   <li><a>Live interactive workshops</a></li>
+                   <span id="asd">with design professionals</span>
+                </div>
+            </div>
+            </div>
+            
+            <li><a href="">job</a></li>
+            <li id="as"><a href="">Go Pro</a></li>
+            <div id="sk">
+                <i class="fa-solid fa-magnifying-glass"></i><input style="border: none;background-color: #f4f5fb;;" type="text" placeholder="Search...">
+            </div>
+            <li><a>login</a></li>
+            <div id="pl"><button> Sign up</button></div>
+         </div>
+       </header>
+<main>
+   <div id="fgh">
+           <div id="qw">
+            <h1>Landing page design</h1>
+           </div>
+       <div id="asz">
+               <div id="uknnn">
+                 <a ><img src="https://cdn.dribbble.com/users/13408665/avatars/small/8ff11907c736c9766d21b075fe376224.png?1679813759" height="35px" weight="auto"></a>
+                </div>
+               <div id="ghj">
+                <span>
+                <a>Ikram hossain</a>
+                for
+                <a>Maxfluid</a></span><span>
+                <div style="color: green;"><a><span></span><i class="fa-regular fa-circle-dot"></i>    Available for work </a></div>
+                <li  style="position: relative;left: 150px;list-style-type: none;bottom: 17px;"><a>follow</a></li>
+                </span>
+               </div>
+            <div id="dfg">
+               <div class="jk"><a><i class="fa-regular fa-heart"></i></a></div>
+               <div class="jk"><a><i class="fa-regular fa-bookmark"></i></a></div>
+               <div id="tym"><a>Get in touch</a></div>
+            </div>
+         </div>
+         <div style="margin-top: 100px;">
+            <a>
+               <img src="https://cdn.dribbble.com/userupload/4280836/file/original-36dd4eae1c90c70321f81c7b239bbfb5.png?resize=1504x1128" height="1200px" width="978px">
+            </a>
+         </div>
+           <div id="content">
+              <p>
+               It would be our pleasure to collaborate with you to develop digital products for your business. Designing a minimalist layout with neat edges is our goal, and we explore how to position the layout.
+              </p>
+              <p style="text-align:start;">
+                Are you interested in collaborating with us too?
+              </p>
+             <p style="text-align:start;"> Don't forget to always talk with us.</p><span>
+             <p>Let's talk at&nbsp;<a><strong>hello.maxfluidlab@gmail.com</a></strong></p></span></div>
+          
+            <div style="position: relative;left: 90px;">
+              <a><img src="https://cdn.dribbble.com/userupload/4280837/file/original-9bbd14e219666614fdb53f9ffdf5397a.png?resize=1200x4466&vertical=center" width="850px"></a>
+            </div><br><br><br>
+         <div  class="user-details-section">
+            <div class="uka">
+                 <li class="titl"><a><img class="photo" src="https://cdn.dribbble.com/users/14249981/avatars/small/507d9144ad417fb22eac2eade0078245.jpg?1670761172"></a></li>    
+            </div><br>
+            <a class="user">Maxfluid</a><br>
+            <button style="border: 1px solid white;border-radius: 21px;background-color: black;color: white;padding: 12px 21px;cursor: pointer;">Get in touch</button>
+         </div>
+       </div><br><br><br><br><br><br><br>
+       <div id="extra-info">
+          <div style="display: flex;flex-direction: row;justify-content: space-between;margin-bottom: 25px;">
+              <li><b>More By Maxfluid</b></li>
+             <li style="position: relative;right: 33px;"><a > View&nbsp;Profile</a></li>
+          </div>
+          <div id="images">
+            <li id="kll" style="margin-left:20px ;"><a><img src="https://cdn.dribbble.com/userupload/4454476/file/original-8e24089687cbe883b730cb434f8d1e10.png?resize=1000x750&vertical=center" height="150px" width="230px"></a></li>
+            <li id="kll"><a><img src="https://cdn.dribbble.com/userupload/4294176/file/original-07a20f301668a61dd5f4b83dba776f8c.png?resize=1000x750&vertical=center" height="150px" width="230px"></a></li>
+            <li id="kll"><a><img src="https://cdn.dribbble.com/userupload/4285599/file/original-4ad2eec44ee8b67586cde6525065b79f.png?resize=1000x750&vertical=center" height="150px" width="230px"></a></li>
+            <li id="kll"><a><img src="https://cdn.dribbble.com/users/13408665/screenshots/19989890/media/6e80f7f4a478f2cfc385baa02486f260.png?resize=1000x750&vertical=center" height="140px" width="230px"></a></li>
+           
+          </div>
+       </div>
+       </main>
+    </section>
+    <footer>
+      <div id="ukas">
+         <div style="position: relative;bottom:20px;">
+           <a><img src="Screenshot (69).png"></a>
+         </div>
+         <div id="like">
+            
+            <li id="kll"><a>for designers</a></li>
+            <li id="kll"><a>Hire talent</a></li>
+            <li id="kll"><a>Inspiration</a></li>
+            <li id="kll"><a>Advertising</a></li>
+            <li id="kll"><a>Blog</a></li>
+            <li id="kll"><a>About</a></li>
+            <li id="kll"><a>Career</a></li>
+            <li id="kll"><a>Support</a></li>
+      
+         </div>
+         <div id="hjg">
+            <li><a><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a><i class="fa-brands fa-pinterest"></i></a></li>
+         </div>
+      </div>
+      <div id="qwe">
+         <div>
+            <li><i class="fa-solid fa-c"></i>2023&nbsp;Dribble</li>
+            <li><a>Terms</a></li>
+            <li><a>Privacy</a></li>
+            <li><a>Coockies</a></li>
+         </div>
+         <div>
+            <li><a>Jobs</a></li>
+            <li><a>Designers</a></li>
+            <li><a>Freelancers</a></li>
+            <li><a>Tags</a></li>
+            <li><a>Places</a></li>
+            <li><a>Resources</a></li>
+         </div>
+      </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/eeb9a0775b.js" crossorigin="anonymous"></script>
+  </body>       
+</html>
